@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492933142A7C36E9007CE987 /* Disney_Wait_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933132A7C36E9007CE987 /* Disney_Wait_TimesApp.swift */; };
+		492933162A7C36E9007CE987 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933152A7C36E9007CE987 /* ContentView.swift */; };
+		492933182A7C36EB007CE987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492933172A7C36EB007CE987 /* Assets.xcassets */; };
+		4929331B2A7C36EB007CE987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4929331A2A7C36EB007CE987 /* Preview Assets.xcassets */; };
+		492933252A7C36EB007CE987 /* Disney_Wait_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933242A7C36EB007CE987 /* Disney_Wait_TimesTests.swift */; };
+		4929332F2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */; };
+		492933312A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		492933212A7C36EB007CE987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492933082A7C36E9007CE987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4929330F2A7C36E9007CE987;
+			remoteInfo = "Disney-Wait-Times";
+		};
+		4929332B2A7C36EB007CE987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492933082A7C36E9007CE987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4929330F2A7C36E9007CE987;
+			remoteInfo = "Disney-Wait-Times";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		492933102A7C36E9007CE987 /* Disney-Wait-Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disney-Wait-Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492933132A7C36E9007CE987 /* Disney_Wait_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesApp.swift; sourceTree = "<group>"; };
+		492933152A7C36E9007CE987 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		492933172A7C36EB007CE987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4929331A2A7C36EB007CE987 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disney-Wait-TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492933242A7C36EB007CE987 /* Disney_Wait_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesTests.swift; sourceTree = "<group>"; };
+		4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disney-Wait-TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITests.swift; sourceTree = "<group>"; };
+		492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4929330D2A7C36E9007CE987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4929331D2A7C36EB007CE987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492933272A7C36EB007CE987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492933072A7C36E9007CE987 = {
+			isa = PBXGroup;
+			children = (
+				492933122A7C36E9007CE987 /* Disney-Wait-Times */,
+				492933232A7C36EB007CE987 /* Disney-Wait-TimesTests */,
+				4929332D2A7C36EB007CE987 /* Disney-Wait-TimesUITests */,
+				492933112A7C36E9007CE987 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492933112A7C36E9007CE987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492933102A7C36E9007CE987 /* Disney-Wait-Times.app */,
+				492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */,
+				4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492933122A7C36E9007CE987 /* Disney-Wait-Times */ = {
+			isa = PBXGroup;
+			children = (
+				492933132A7C36E9007CE987 /* Disney_Wait_TimesApp.swift */,
+				492933152A7C36E9007CE987 /* ContentView.swift */,
+				492933172A7C36EB007CE987 /* Assets.xcassets */,
+				492933192A7C36EB007CE987 /* Preview Content */,
+			);
+			path = "Disney-Wait-Times";
+			sourceTree = "<group>";
+		};
+		492933192A7C36EB007CE987 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4929331A2A7C36EB007CE987 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		492933232A7C36EB007CE987 /* Disney-Wait-TimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				492933242A7C36EB007CE987 /* Disney_Wait_TimesTests.swift */,
+			);
+			path = "Disney-Wait-TimesTests";
+			sourceTree = "<group>";
+		};
+		4929332D2A7C36EB007CE987 /* Disney-Wait-TimesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */,
+				492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */,
+			);
+			path = "Disney-Wait-TimesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4929330F2A7C36E9007CE987 /* Disney-Wait-Times */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-Times" */;
+			buildPhases = (
+				4929330C2A7C36E9007CE987 /* Sources */,
+				4929330D2A7C36E9007CE987 /* Frameworks */,
+				4929330E2A7C36E9007CE987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disney-Wait-Times";
+			productName = "Disney-Wait-Times";
+			productReference = 492933102A7C36E9007CE987 /* Disney-Wait-Times.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4929331F2A7C36EB007CE987 /* Disney-Wait-TimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesTests" */;
+			buildPhases = (
+				4929331C2A7C36EB007CE987 /* Sources */,
+				4929331D2A7C36EB007CE987 /* Frameworks */,
+				4929331E2A7C36EB007CE987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492933222A7C36EB007CE987 /* PBXTargetDependency */,
+			);
+			name = "Disney-Wait-TimesTests";
+			productName = "Disney-Wait-TimesTests";
+			productReference = 492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		492933292A7C36EB007CE987 /* Disney-Wait-TimesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesUITests" */;
+			buildPhases = (
+				492933262A7C36EB007CE987 /* Sources */,
+				492933272A7C36EB007CE987 /* Frameworks */,
+				492933282A7C36EB007CE987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4929332C2A7C36EB007CE987 /* PBXTargetDependency */,
+			);
+			name = "Disney-Wait-TimesUITests";
+			productName = "Disney-Wait-TimesUITests";
+			productReference = 4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492933082A7C36E9007CE987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4929330F2A7C36E9007CE987 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4929331F2A7C36EB007CE987 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4929330F2A7C36E9007CE987;
+					};
+					492933292A7C36EB007CE987 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4929330F2A7C36E9007CE987;
+					};
+				};
+			};
+			buildConfigurationList = 4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "Disney-Wait-Times" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492933072A7C36E9007CE987;
+			productRefGroup = 492933112A7C36E9007CE987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4929330F2A7C36E9007CE987 /* Disney-Wait-Times */,
+				4929331F2A7C36EB007CE987 /* Disney-Wait-TimesTests */,
+				492933292A7C36EB007CE987 /* Disney-Wait-TimesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4929330E2A7C36E9007CE987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4929331B2A7C36EB007CE987 /* Preview Assets.xcassets in Resources */,
+				492933182A7C36EB007CE987 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4929331E2A7C36EB007CE987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492933282A7C36EB007CE987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4929330C2A7C36E9007CE987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492933162A7C36E9007CE987 /* ContentView.swift in Sources */,
+				492933142A7C36E9007CE987 /* Disney_Wait_TimesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4929331C2A7C36EB007CE987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492933252A7C36EB007CE987 /* Disney_Wait_TimesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492933262A7C36EB007CE987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492933312A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift in Sources */,
+				4929332F2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		492933222A7C36EB007CE987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4929330F2A7C36E9007CE987 /* Disney-Wait-Times */;
+			targetProxy = 492933212A7C36EB007CE987 /* PBXContainerItemProxy */;
+		};
+		4929332C2A7C36EB007CE987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4929330F2A7C36E9007CE987 /* Disney-Wait-Times */;
+			targetProxy = 4929332B2A7C36EB007CE987 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		492933322A7C36EB007CE987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		492933332A7C36EB007CE987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		492933352A7C36EC007CE987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Disney-Wait-Times/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-Times";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		492933362A7C36EC007CE987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Disney-Wait-Times/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-Times";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		492933382A7C36EC007CE987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disney-Wait-Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Disney-Wait-Times";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		492933392A7C36EC007CE987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disney-Wait-Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Disney-Wait-Times";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Release;
+		};
+		4929333B2A7C36EC007CE987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-TimesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Disney-Wait-Times";
+			};
+			name = Debug;
+		};
+		4929333C2A7C36EC007CE987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zhowez.Disney-Wait-TimesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Disney-Wait-Times";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "Disney-Wait-Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492933322A7C36EB007CE987 /* Debug */,
+				492933332A7C36EB007CE987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492933352A7C36EC007CE987 /* Debug */,
+				492933362A7C36EC007CE987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492933382A7C36EC007CE987 /* Debug */,
+				492933392A7C36EC007CE987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4929333B2A7C36EC007CE987 /* Debug */,
+				4929333C2A7C36EC007CE987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492933082A7C36E9007CE987 /* Project object */;
+}
