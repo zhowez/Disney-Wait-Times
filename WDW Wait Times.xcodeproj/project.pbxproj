@@ -39,14 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		492933102A7C36E9007CE987 /* Disney-Wait-Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disney-Wait-Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492933102A7C36E9007CE987 /* WDW Wait Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WDW Wait Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492933132A7C36E9007CE987 /* Disney_Wait_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesApp.swift; sourceTree = "<group>"; };
 		492933152A7C36E9007CE987 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		492933172A7C36EB007CE987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4929331A2A7C36EB007CE987 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disney-Wait-TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492933202A7C36EB007CE987 /* WDW Wait TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WDW Wait TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492933242A7C36EB007CE987 /* Disney_Wait_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesTests.swift; sourceTree = "<group>"; };
-		4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disney-Wait-TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4929332A2A7C36EB007CE987 /* WDW Wait TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WDW Wait TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITests.swift; sourceTree = "<group>"; };
 		492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4929333E2A7C375F007CE987 /* ParkHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHours.swift; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 		492933112A7C36E9007CE987 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				492933102A7C36E9007CE987 /* Disney-Wait-Times.app */,
-				492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */,
-				4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */,
+				492933102A7C36E9007CE987 /* WDW Wait Times.app */,
+				492933202A7C36EB007CE987 /* WDW Wait TimesTests.xctest */,
+				4929332A2A7C36EB007CE987 /* WDW Wait TimesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4929330F2A7C36E9007CE987 /* Disney-Wait-Times */ = {
+		4929330F2A7C36E9007CE987 /* WDW Wait Times */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-Times" */;
+			buildConfigurationList = 492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait Times" */;
 			buildPhases = (
 				4929330C2A7C36E9007CE987 /* Sources */,
 				4929330D2A7C36E9007CE987 /* Frameworks */,
@@ -165,14 +165,14 @@
 			);
 			dependencies = (
 			);
-			name = "Disney-Wait-Times";
+			name = "WDW Wait Times";
 			productName = "Disney-Wait-Times";
-			productReference = 492933102A7C36E9007CE987 /* Disney-Wait-Times.app */;
+			productReference = 492933102A7C36E9007CE987 /* WDW Wait Times.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4929331F2A7C36EB007CE987 /* Disney-Wait-TimesTests */ = {
+		4929331F2A7C36EB007CE987 /* WDW Wait TimesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesTests" */;
+			buildConfigurationList = 492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait TimesTests" */;
 			buildPhases = (
 				4929331C2A7C36EB007CE987 /* Sources */,
 				4929331D2A7C36EB007CE987 /* Frameworks */,
@@ -183,14 +183,14 @@
 			dependencies = (
 				492933222A7C36EB007CE987 /* PBXTargetDependency */,
 			);
-			name = "Disney-Wait-TimesTests";
+			name = "WDW Wait TimesTests";
 			productName = "Disney-Wait-TimesTests";
-			productReference = 492933202A7C36EB007CE987 /* Disney-Wait-TimesTests.xctest */;
+			productReference = 492933202A7C36EB007CE987 /* WDW Wait TimesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		492933292A7C36EB007CE987 /* Disney-Wait-TimesUITests */ = {
+		492933292A7C36EB007CE987 /* WDW Wait TimesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesUITests" */;
+			buildConfigurationList = 4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait TimesUITests" */;
 			buildPhases = (
 				492933262A7C36EB007CE987 /* Sources */,
 				492933272A7C36EB007CE987 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				4929332C2A7C36EB007CE987 /* PBXTargetDependency */,
 			);
-			name = "Disney-Wait-TimesUITests";
+			name = "WDW Wait TimesUITests";
 			productName = "Disney-Wait-TimesUITests";
-			productReference = 4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */;
+			productReference = 4929332A2A7C36EB007CE987 /* WDW Wait TimesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "Disney-Wait-Times" */;
+			buildConfigurationList = 4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "WDW Wait Times" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4929330F2A7C36E9007CE987 /* Disney-Wait-Times */,
-				4929331F2A7C36EB007CE987 /* Disney-Wait-TimesTests */,
-				492933292A7C36EB007CE987 /* Disney-Wait-TimesUITests */,
+				4929330F2A7C36E9007CE987 /* WDW Wait Times */,
+				4929331F2A7C36EB007CE987 /* WDW Wait TimesTests */,
+				492933292A7C36EB007CE987 /* WDW Wait TimesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		492933222A7C36EB007CE987 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4929330F2A7C36E9007CE987 /* Disney-Wait-Times */;
+			target = 4929330F2A7C36E9007CE987 /* WDW Wait Times */;
 			targetProxy = 492933212A7C36EB007CE987 /* PBXContainerItemProxy */;
 		};
 		4929332C2A7C36EB007CE987 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4929330F2A7C36E9007CE987 /* Disney-Wait-Times */;
+			target = 4929330F2A7C36E9007CE987 /* WDW Wait Times */;
 			targetProxy = 4929332B2A7C36EB007CE987 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,7 +503,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disney-Wait-Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Disney-Wait-Times";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDWm Wait Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WDWm Wait Times";
 				TVOS_DEPLOYMENT_TARGET = 16.4;
 			};
 			name = Debug;
@@ -522,7 +522,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disney-Wait-Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Disney-Wait-Times";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDWm Wait Times.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WDWm Wait Times";
 				TVOS_DEPLOYMENT_TARGET = 16.4;
 			};
 			name = Release;
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "Disney-Wait-Times" */ = {
+		4929330B2A7C36E9007CE987 /* Build configuration list for PBXProject "WDW Wait Times" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				492933322A7C36EB007CE987 /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-Times" */ = {
+		492933342A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait Times" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				492933352A7C36EC007CE987 /* Debug */,
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesTests" */ = {
+		492933372A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait TimesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				492933382A7C36EC007CE987 /* Debug */,
@@ -591,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "Disney-Wait-TimesUITests" */ = {
+		4929333A2A7C36EC007CE987 /* Build configuration list for PBXNativeTarget "WDW Wait TimesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4929333B2A7C36EC007CE987 /* Debug */,
