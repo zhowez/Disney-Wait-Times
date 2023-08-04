@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Disney_Wait_TimesApp: App {
+    @StateObject var parksApp = Parks()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(parksApp)
         }
     }
 }

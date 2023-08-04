@@ -14,6 +14,11 @@
 		492933252A7C36EB007CE987 /* Disney_Wait_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933242A7C36EB007CE987 /* Disney_Wait_TimesTests.swift */; };
 		4929332F2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */; };
 		492933312A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */; };
+		4929333F2A7C375F007CE987 /* ParkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929333E2A7C375F007CE987 /* ParkHour.swift */; };
+		492933412A7C377C007CE987 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933402A7C377C007CE987 /* Networker.swift */; };
+		492933432A7C3902007CE987 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933422A7C3902007CE987 /* Parks.swift */; };
+		492933452A7C5FA4007CE987 /* SpecialEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933442A7C5FA4007CE987 /* SpecialEvents.swift */; };
+		492933492A7C8E0A007CE987 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933482A7C8E0A007CE987 /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4929332A2A7C36EB007CE987 /* Disney-Wait-TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disney-Wait-TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4929332E2A7C36EB007CE987 /* Disney_Wait_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITests.swift; sourceTree = "<group>"; };
 		492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney_Wait_TimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4929333E2A7C375F007CE987 /* ParkHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHour.swift; sourceTree = "<group>"; };
+		492933402A7C377C007CE987 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		492933422A7C3902007CE987 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
+		492933442A7C5FA4007CE987 /* SpecialEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEvents.swift; sourceTree = "<group>"; };
+		492933482A7C8E0A007CE987 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,12 @@
 		492933122A7C36E9007CE987 /* Disney-Wait-Times */ = {
 			isa = PBXGroup;
 			children = (
+				4929333D2A7C372B007CE987 /* Model */,
 				492933132A7C36E9007CE987 /* Disney_Wait_TimesApp.swift */,
 				492933152A7C36E9007CE987 /* ContentView.swift */,
 				492933172A7C36EB007CE987 /* Assets.xcassets */,
 				492933192A7C36EB007CE987 /* Preview Content */,
+				492933482A7C8E0A007CE987 /* Music.swift */,
 			);
 			path = "Disney-Wait-Times";
 			sourceTree = "<group>";
@@ -125,6 +137,17 @@
 				492933302A7C36EB007CE987 /* Disney_Wait_TimesUITestsLaunchTests.swift */,
 			);
 			path = "Disney-Wait-TimesUITests";
+			sourceTree = "<group>";
+		};
+		4929333D2A7C372B007CE987 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4929333E2A7C375F007CE987 /* ParkHour.swift */,
+				492933402A7C377C007CE987 /* Networker.swift */,
+				492933422A7C3902007CE987 /* Parks.swift */,
+				492933442A7C5FA4007CE987 /* SpecialEvents.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492933432A7C3902007CE987 /* Parks.swift in Sources */,
 				492933162A7C36E9007CE987 /* ContentView.swift in Sources */,
 				492933142A7C36E9007CE987 /* Disney_Wait_TimesApp.swift in Sources */,
+				4929333F2A7C375F007CE987 /* ParkHour.swift in Sources */,
+				492933492A7C8E0A007CE987 /* Music.swift in Sources */,
+				492933452A7C5FA4007CE987 /* SpecialEvents.swift in Sources */,
+				492933412A7C377C007CE987 /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Disney-Wait-Times/Preview Content\"";
+				DEVELOPMENT_TEAM = 488BDNKFC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -442,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Disney-Wait-Times/Preview Content\"";
+				DEVELOPMENT_TEAM = 488BDNKFC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
