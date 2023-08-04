@@ -8,10 +8,13 @@
 import Foundation
 
 class Parks: ObservableObject{
-    @Published var parks: [ParkHour] = [ParkHour()]
+    @Published var parkData: [String:ParkHours] = [:]
     
     @Published var loadingError = false
     @Published var isLoading = true
+    
+    var parkIDs = ["mk","epcot","hs","dak"]
+    var idIndex = 0
     
     init() {
         Task {
@@ -23,7 +26,6 @@ class Parks: ObservableObject{
 
     
     @MainActor func getPark() async {
-        print("get Park")
         loadingError = false
         
         isLoading = true
@@ -33,10 +35,20 @@ class Parks: ObservableObject{
         
         
         do {
-            let newParks = try await Networker.getDataForPark(park: "WaltDisneyWorldMagicKingdom")
-            parks = newParks
+            var newPark = try await Networker.getDataForPark(parkID: "75ea578a-adc8-4116-a54d-dccb60765ef9")
+            parkData["mk"] = newPark
             
-            print("Printing saved data")
+            newPark = try await Networker.getDataForPark(parkID: "47f90d2c-e191-4239-a466-5892ef59a88b")
+            parkData["epcot"] = newPark
+           
+            newPark = try await Networker.getDataForPark(parkID: "288747d1-8b4f-4a64-867e-ea7c9b27bad8")
+            parkData["hs"] = newPark
+            
+            newPark = try await Networker.getDataForPark(parkID: "1c84a229-8862-4648-9c71-378ddd2c7693")
+           
+            parkData["dak"] = newPark
+            
+           
          
             
        
@@ -48,14 +60,44 @@ class Parks: ObservableObject{
     }
     
     
-    func getData() -> ParkHour {
-        print("Chewie punch it!")
+    
+    
+    func getOperatingHours(parkArg:String) -> Schedule {
         //use is loading to stop extra reloads
         if (!isLoading) {
-            return parks[1]
+            
+            
+            let date = Date()
+            let dateFormatter = DateFormatter()
+             
+            dateFormatter.dateFormat = "yyy-MM-dd"
+             
+            let d = dateFormatter.string(from: date)
+            
+            let data = parkData[parkArg]
+          
+            let mkHours =  data?.schedule.filter{ ($0.date.contains(d)) }
+           
+            let mkOperatingHours = mkHours?.filter{($0).type.contains("OPERATING")}
+            
+            return mkOperatingHours?[0] ?? Schedule.error()
         }
         
-        return ParkHour.error()
+        return Schedule.error()
         
     }
+    
+    func getParkName (parkArg:String) -> String {
+        if parkArg == "dak" {
+            return parkData[parkArg]?.name ?? "park"
+        }
+        return parkData[parkArg]?.name ?? "park"
+    }
+    
+    func getNextID() -> String {
+        idIndex += 1
+        
+        return parkIDs[idIndex % 4]
+    }
+    
 }

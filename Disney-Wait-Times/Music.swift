@@ -12,7 +12,7 @@ final class AudioManager {
     var player = AVPlayer()
 
     func Start () {
-        let url = URL(string:"https://18093.live.streamtheworld.com/SP_R3956612_SC")
+        let url = URL(string:"https://19013.live.streamtheworld.com/SP_R3956254_SC")
         
         do {
             player =  AVPlayer(url: url!)

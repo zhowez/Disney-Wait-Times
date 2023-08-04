@@ -12,24 +12,35 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var parksApp:Parks
 
+    var backgrounds = ["mk": Image("MK_BG"),"epcot": Image("EPCOT_BG"),"hs": Image("HS_BG"), "dak": Image("DAK_BG") ]
+    
+   
+    
+    @State private var parkType = "mk"
+    
+    let timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
+    
         
 
     
 
     var open: String  {
-        parksApp.getData().displayOpen
+        parksApp.getOperatingHours(parkArg: parkType).displayOpen
     }
     var close: String  {
-        parksApp.getData().displayClose
+        parksApp.getOperatingHours(parkArg: parkType).displayClose
+    }
+    var title: String {
+        parksApp.getParkName(parkArg: parkType)
     }
     
     var body: some View {
         
         VStack {
-            Capsule().fill(Color.gray.opacity(0.9)).overlay(
+            RoundedRectangle(cornerRadius: 18).fill(Color.gray.opacity(0.9)).overlay(
                 VStack {
                     HStack {
-                        Text("Magic Kingdom").foregroundColor(.black).font(.system(size: 100,weight: .bold))
+                        Text(title).foregroundColor(.black).font(.system(size: 100,weight: .bold))
                     };
                     Spacer().frame(height: 25);
                     HStack{
@@ -40,10 +51,7 @@ struct ContentView: View {
                         VStack {
                             Text("Closing Time").foregroundColor(.black).font(.system(size: 50,weight: .bold))
                             Text(close).foregroundColor(.black).font(.system(size: 50,weight: .bold))
-                        };  VStack {
-                            Text("Fireworks").foregroundColor(.black).font(.system(size: 50,weight: .bold))
-                            Text("9:00 PM").foregroundColor(.black).font(.system(size: 50,weight: .bold))
-                        };
+                        }; 
                     }
                     Spacer().frame(height: 25);
                 }
@@ -52,8 +60,13 @@ struct ContentView: View {
           
         }
         .padding()
-        .background(Image("MK_BG"))
+        .background(backgrounds[parkType])
         .onAppear{AudioManager.shared.Start()}
+        .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
+        .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
+        .onReceive(timer, perform: { time in
+            parkType = parksApp.getNextID()
+        })
     }
 }
 

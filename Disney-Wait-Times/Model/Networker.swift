@@ -16,9 +16,9 @@ enum FetchError: Error {
 
 
 enum Networker {
-    static func getDataForPark(park:String) async throws -> [ParkHour] {
+    static func getDataForPark(parkID:String) async throws -> ParkHours {
         
-        let address = "https://api.themeparks.wiki/preview/parks/" + park + "/calendar"
+        let address = "https://api.themeparks.wiki/v1/entity/" + parkID + "/schedule"
         guard let url = URL(string: address) else {
             throw FetchError.badURL
         }
@@ -28,7 +28,7 @@ enum Networker {
             throw FetchError.badResponse
         }
         
-        guard let newPark = try? JSONDecoder().decode([ParkHour].self, from: data) else {
+        guard let newParkHours = try? JSONDecoder().decode(ParkHours.self, from: data) else {
             if let debugString = String(data: data, encoding: .utf8) {
                 print("Debugging: ")
                 print(debugString)
@@ -38,6 +38,6 @@ enum Networker {
             throw FetchError.badJSON
         }
         
-        return newPark
+        return newParkHours
     }
 }
