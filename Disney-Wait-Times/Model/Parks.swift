@@ -89,9 +89,9 @@ class Parks: ObservableObject{
     
     func getParkName (parkArg:String) -> String {
         if parkArg == "dak" {
-            return parkData[parkArg]?.name ?? "park"
+            return parkData[parkArg]?.name ?? "----"
         }
-        return parkData[parkArg]?.name ?? "park"
+        return parkData[parkArg]?.name ?? "----"
     }
     
     func getNextID() -> String {
