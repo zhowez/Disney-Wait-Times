@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var parksApp:Parks
 
-    var backgrounds = ["mk": Image("MK_BG"),"epcot": Image("EPCOT_BG"),"hs": Image("HS_BG"), "dak": Image("DAK_BG") ]
+    var backgrounds = ["mk": Image("MK_BG"),"epcot": Image("EPCOT_BG"),"hs": Image("HS_BG"), "dak": Image("DAK_BG"),"ds": Image("DAK_BG") ]
     
    
     
@@ -25,10 +25,10 @@ struct ContentView: View {
     
 
     var open: String  {
-        parksApp.getOperatingHours(parkArg: parkType).displayOpen
+        parksApp.getOperatingHours(parkArg: parkType).0
     }
     var close: String  {
-        parksApp.getOperatingHours(parkArg: parkType).displayClose
+        parksApp.getOperatingHours(parkArg: parkType).1
     }
     var title: String {
         parksApp.getParkName(parkArg: parkType)

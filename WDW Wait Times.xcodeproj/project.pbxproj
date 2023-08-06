@@ -19,6 +19,8 @@
 		492933432A7C3902007CE987 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933422A7C3902007CE987 /* Parks.swift */; };
 		492933452A7C5FA4007CE987 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933442A7C5FA4007CE987 /* Schedule.swift */; };
 		492933492A7C8E0A007CE987 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492933482A7C8E0A007CE987 /* Music.swift */; };
+		4929334B2A804FC8007CE987 /* DSHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929334A2A804FC8007CE987 /* DSHours.swift */; };
+		4929334D2A80509B007CE987 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929334C2A80509B007CE987 /* TimePeriod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		492933422A7C3902007CE987 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
 		492933442A7C5FA4007CE987 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		492933482A7C8E0A007CE987 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		4929334A2A804FC8007CE987 /* DSHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHours.swift; sourceTree = "<group>"; };
+		4929334C2A80509B007CE987 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				492933402A7C377C007CE987 /* Networker.swift */,
 				492933422A7C3902007CE987 /* Parks.swift */,
 				492933442A7C5FA4007CE987 /* Schedule.swift */,
+				4929334A2A804FC8007CE987 /* DSHours.swift */,
+				4929334C2A80509B007CE987 /* TimePeriod.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4929334D2A80509B007CE987 /* TimePeriod.swift in Sources */,
+				4929334B2A804FC8007CE987 /* DSHours.swift in Sources */,
 				492933432A7C3902007CE987 /* Parks.swift in Sources */,
 				492933162A7C36E9007CE987 /* ContentView.swift in Sources */,
 				492933142A7C36E9007CE987 /* Disney_Wait_TimesApp.swift in Sources */,

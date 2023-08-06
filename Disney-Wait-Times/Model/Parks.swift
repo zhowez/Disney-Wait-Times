@@ -9,23 +9,24 @@ import Foundation
 
 class Parks: ObservableObject{
     @Published var parkData: [String:ParkHours] = [:]
+    @Published var dsData:DSHours = DSHours()
     
     @Published var loadingError = false
     @Published var isLoading = true
     
-    var parkIDs = ["mk","epcot","hs","dak"]
+    var parkIDs = ["mk","epcot","hs","dak","ds"]
     var idIndex = 0
     
     init() {
         Task {
-            await getPark()
+            await getParkHours()
         }
     }
     
   
 
     
-    @MainActor func getPark() async {
+    @MainActor func getParkHours() async {
         loadingError = false
         
         isLoading = true
@@ -48,8 +49,14 @@ class Parks: ObservableObject{
            
             parkData["dak"] = newPark
             
-           
-         
+            let date = Date()
+            let dateFormatter = DateFormatter()
+             
+            dateFormatter.dateFormat = "yyyyMMdd"
+             
+            let d = dateFormatter.string(from: date)
+            
+            dsData = try await Networker.getDataForDS(date: d)
             
        
         } catch {
@@ -61,35 +68,42 @@ class Parks: ObservableObject{
     
     
     
-    
-    func getOperatingHours(parkArg:String) -> Schedule {
+    //Need to update to seperate out open and close
+    func getOperatingHours(parkArg:String) -> (String,String) {
         //use is loading to stop extra reloads
+        let hoursError = ("--:--","--:--")
         if (!isLoading) {
+            if parkArg == "ds" {
+                let s = dsData.timePeriods[0].displayOpen
+                let c = dsData.timePeriods[0].displayClose
+                return (s,c)
+            }
+            
             
             
             let date = Date()
             let dateFormatter = DateFormatter()
              
-            dateFormatter.dateFormat = "yyy-MM-dd"
+            dateFormatter.dateFormat = "yyyy-MM-dd"
              
             let d = dateFormatter.string(from: date)
             
             let data = parkData[parkArg]
           
-            let mkHours =  data?.schedule.filter{ ($0.date.contains(d)) }
+            let hours =  data?.schedule.filter{ ($0.date.contains(d)) }
            
-            let mkOperatingHours = mkHours?.filter{($0).type.contains("OPERATING")}
+            let operatingHours = hours?.filter{($0).type.contains("OPERATING")}
             
-            return mkOperatingHours?[0] ?? Schedule.error()
+            return (operatingHours?[0].displayOpen ?? Schedule.error().displayOpen, operatingHours?[0].displayClose ?? Schedule.error().displayClose)
         }
         
-        return Schedule.error()
+        return hoursError
         
     }
     
     func getParkName (parkArg:String) -> String {
-        if parkArg == "dak" {
-            return parkData[parkArg]?.name ?? "----"
+        if parkArg == "ds" {
+            return dsData.name
         }
         return parkData[parkArg]?.name ?? "----"
     }
@@ -97,7 +111,7 @@ class Parks: ObservableObject{
     func getNextID() -> String {
         idIndex += 1
         
-        return parkIDs[idIndex % 4]
+        return parkIDs[idIndex % 5]
     }
     
 }

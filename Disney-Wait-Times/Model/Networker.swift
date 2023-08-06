@@ -40,4 +40,31 @@ enum Networker {
         
         return newParkHours
     }
+    
+    
+    static func getDataForDS(date: String) async throws -> DSHours {
+        print(date)
+        
+        let address = "https://www.disneysprings.com/api/v1/content/hours?facilityType=facility&facilityId=10460&dateFilter=" + date
+        
+        guard let url = URL(string: address) else {
+            throw FetchError.badURL
+        }
+        let request = URLRequest(url: url)
+        let (data, res) = try await URLSession.shared.data(for: request)
+        guard let res =  res as? HTTPURLResponse, res.statusCode < 400 else {
+            throw FetchError.badResponse
+        }
+        
+        guard let newDSHours = try? JSONDecoder().decode(DSHours.self, from: data) else {
+            if let debugString = String(data: data, encoding: .utf8) {
+                print("Debugging: ")
+                print(debugString)
+               
+            }
+            throw FetchError.badJSON
+        }
+       
+        return newDSHours
+    }
 }
