@@ -16,7 +16,7 @@ final class AudioManager {
         
         do {
             player =  AVPlayer(url: url!)
-            
+            player.volume = 0.6
             player.play()
         }
     }

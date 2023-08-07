@@ -46,7 +46,6 @@ class Parks: ObservableObject{
             parkData["hs"] = newPark
             
             newPark = try await Networker.getDataForPark(parkID: "1c84a229-8862-4648-9c71-378ddd2c7693")
-           
             parkData["dak"] = newPark
             
             let date = Date()
