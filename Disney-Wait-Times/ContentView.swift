@@ -55,7 +55,7 @@ struct ContentView: View {
                     }
                     Spacer().frame(height: 25);
                 }
-            ).offset(y:350).frame(width: 1750, height: 300)
+            ).offset(y:350).frame(minWidth: 1200, idealWidth: 1600, maxWidth: 1750, minHeight: 100, idealHeight: 300, maxHeight: 300, alignment: .center)
            
           
         }
