@@ -20,4 +20,12 @@ final class AudioManager {
             player.play()
         }
     }
+    
+    func Stop () {
+        
+        do {
+            player.pause()
+        }
+        
+    }
 }

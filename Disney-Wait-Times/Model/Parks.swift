@@ -68,17 +68,15 @@ class Parks: ObservableObject{
     
     
     
-    //Need to update to seperate out open and close
-    func getOperatingHours(parkArg:String) -> (String,String) {
+    
+    func getOperatingHoursOpen(parkArg:String) -> String {
         //use is loading to stop extra reloads
-        let hoursError = ("--:--","--:--")
+        let hoursError = "--:--"
         if (!isLoading) {
             if parkArg == "ds" {
-                let s = dsData.timePeriods[0].displayOpen
-                let c = dsData.timePeriods[0].displayClose
-                return (s,c)
+                return dsData.timePeriods[0].displayOpen
+               
             }
-            
             
             
             let date = Date()
@@ -94,12 +92,43 @@ class Parks: ObservableObject{
            
             let operatingHours = hours?.filter{($0).type.contains("OPERATING")}
             
-            return (operatingHours?[0].displayOpen ?? Schedule.error().displayOpen, operatingHours?[0].displayClose ?? Schedule.error().displayClose)
+            return operatingHours?[0].displayOpen ?? Schedule.error().displayOpen
         }
         
         return hoursError
         
     }
+    
+    func getOperatingHoursClose(parkArg:String) -> String {
+        //use is loading to stop extra reloads
+        let hoursError = "--:--"
+        if (!isLoading) {
+            if parkArg == "ds" {
+                return dsData.timePeriods[0].displayClose
+               
+            }
+            
+            
+            let date = Date()
+            let dateFormatter = DateFormatter()
+             
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+             
+            let d = dateFormatter.string(from: date)
+            
+            let data = parkData[parkArg]
+          
+            let hours =  data?.schedule.filter{ ($0.date.contains(d)) }
+           
+            let operatingHours = hours?.filter{($0).type.contains("OPERATING")}
+            
+            return operatingHours?[0].displayClose ?? Schedule.error().displayClose
+        }
+        
+        return hoursError
+        
+    }
+    
     
     func getParkName (parkArg:String) -> String {
         if parkArg == "ds" {
@@ -111,7 +140,7 @@ class Parks: ObservableObject{
     func getNextID() -> String {
         idIndex += 1
         
-        return parkIDs[idIndex % 5]
+        return parkIDs[idIndex % parkIDs.count]
     }
     
 }

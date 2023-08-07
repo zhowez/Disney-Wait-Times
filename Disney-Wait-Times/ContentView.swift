@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var parksApp:Parks
 
-    var backgrounds = ["mk": Image("MK_BG"),"epcot": Image("EPCOT_BG"),"hs": Image("HS_BG"), "dak": Image("DAK_BG"),"ds": Image("DAK_BG") ]
+    var backgrounds = ["mk": Image("MK_BG"),"epcot": Image("EPCOT_BG"),"hs": Image("HS_BG"), "dak": Image("DAK_BG"),"ds": Image("DS_BG") ]
     
    
     
@@ -25,10 +25,10 @@ struct ContentView: View {
     
 
     var open: String  {
-        parksApp.getOperatingHours(parkArg: parkType).0
+        parksApp.getOperatingHoursOpen(parkArg: parkType)
     }
     var close: String  {
-        parksApp.getOperatingHours(parkArg: parkType).1
+        parksApp.getOperatingHoursClose(parkArg: parkType)
     }
     var title: String {
         parksApp.getParkName(parkArg: parkType)
@@ -64,7 +64,7 @@ struct ContentView: View {
         .onAppear{AudioManager.shared.Start()}
         .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
         .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
-        .onReceive(timer, perform: { time in
+                .onReceive(timer, perform: { time in
             parkType = parksApp.getNextID()
         })
     }
